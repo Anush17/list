@@ -7,7 +7,7 @@
     border-radius: 4px;
 }
 
-input[type=text] {
+#txt{
     padding: 9px 6px;
     margin: 8px 0;
     display: inline-block;
