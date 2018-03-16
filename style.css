@@ -1,6 +1,5 @@
 #box{
-    width: 10%;
-    padding: 10px 10px 20px 10px;
+    width: 17%;
     border: 1px solid #BFBFBF;
     background-color: white;
     box-shadow: 10px 10px 5px #aaaaaa;
@@ -10,12 +9,21 @@
 #txt{
     padding: 9px 6px;
     margin: 8px 0;
-    display: inline-block;
+    display: inline-block !important;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
 }
 
-.block{
+.disNone{
     display: none;
+}
+
+ul li{
+    cursor: pointer;
+    list-style-type: none;
+}
+
+ul li:hover{
+    color: #BFBFBF;
 }
