@@ -25,7 +25,7 @@ $(function () {
                     list.empty();
                     //this function is for getting current position of cursor
                     if (start >= 0) {
-                        checkSign(e);
+                        checkSign();
                     }
                 }
             });
@@ -38,23 +38,19 @@ $(function () {
                 list.append('<li id="' + names[i] + '">' + names[i] + '<br>' + '</li>');
                 $("#list li").click(function (e) {
                     if (e.target && e.target.nodeName === "LI") {
-                        console.log(e.target.id + " was clicked");
-                        let attr = $(this).attr('id');
-                        txtArea.val(txtArea.val() + attr + ' ');
+                        txtArea.val(txtArea.val() + $(this).attr('id') + ' ');
                         box.addClass('disNone');
                     }
                 });
             }
             list.each(function () {
-                $(this).children().slice(0, 2).hide();
+                $(this).children().slice(0, 3).hide();
             });
         }
 
         //checking if have a `@` sign or not
-        function checkSign(eve) {
-            let charCode = String.fromCharCode(eve.keyCode);
+        function checkSign() {
             let lastChar = txtArea.val().slice(-1);
-            console.log(charCode);
             if (lastChar === '@') {
                 fillData();
             } else {
