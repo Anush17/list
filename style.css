@@ -1,4 +1,4 @@
-#box{
+#box {
     width: 17%;
     border: 1px solid #BFBFBF;
     background-color: white;
@@ -6,7 +6,7 @@
     border-radius: 4px;
 }
 
-#txt{
+#txt {
     padding: 9px 6px;
     margin: 8px 0;
     display: inline-block !important;
@@ -15,15 +15,15 @@
     box-sizing: border-box;
 }
 
-.disNone{
+.disNone {
     display: none;
 }
 
-ul li{
+ul li {
     cursor: pointer;
     list-style-type: none;
 }
 
-ul li:hover{
-    color: #BFBFBF;
+ul li:hover {
+    color: #598070;
 }
